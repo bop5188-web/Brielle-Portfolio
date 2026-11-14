@@ -1,4 +1,4 @@
-/* --- Base — Inter, white minimal, neon used sparingly --- */
+/* --- Base ‚Äî Inter, white minimal, neon used sparingly --- */
 *,
 *::before,
 *::after {
@@ -15,7 +15,7 @@ html.page-home {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   scroll-padding-top: 0;
-  /* Clear soft ombre ladder — dusk violet at the end, never near-black */
+  /* Clear soft ombre ladder ‚Äî dusk violet at the end, never near-black */
   --home-flow-bg: #faf8fc;
   --ombre-1: #ebe0f5;
   --ombre-2: #d7c6eb;
@@ -74,7 +74,7 @@ body.case-study-panel-is-open {
   --case-track-fill-end: #22d3ee;
 }
 
-/* --- Fixed top: progress (first) + nav — visible once first case study is reached --- */
+/* --- Fixed top: progress (first) + nav ‚Äî visible once first case study is reached --- */
 .top-chrome {
   position: fixed;
   top: env(safe-area-inset-top, 0);
@@ -138,7 +138,7 @@ body.case-study-panel-is-open {
   padding: 0.5rem 1rem 0.45rem;
 }
 
-/* Work page: nav only — no bar, same horizontal rhythm as home */
+/* Work page: nav only ‚Äî no bar, same horizontal rhythm as home */
 .top-chrome--work-only {
   background: transparent;
   box-shadow: none;
@@ -178,7 +178,7 @@ body.case-study-panel-is-open {
     0 0 14px rgba(34, 211, 238, 0.22);
 }
 
-/* Legacy: old work-only nav (transparent) — keep hover readable if reused */
+/* Legacy: old work-only nav (transparent) ‚Äî keep hover readable if reused */
 .site-nav--work .site-nav__links a {
   color: rgba(20, 20, 20, 0.86);
 }
@@ -339,7 +339,7 @@ body.page-work .case-study-cursor__arrow {
 }
 
 body.page-work .case-study-cursor__arrow::before {
-  content: "→";
+  content: "‚Üí";
 }
 
 /* --- Home hero: name-forward + floating profile card --- */
@@ -645,7 +645,7 @@ body.page-work .case-study-cursor__arrow::before {
   }
 }
 
-/* --- Scroll hint: first screen → work --- */
+/* --- Scroll hint: first screen ‚Üí work --- */
 .scroll-into-work {
   position: fixed;
   left: 50%;
@@ -725,7 +725,7 @@ body.page-work .case-study-cursor__arrow::before {
   }
 }
 
-/* --- Home: below-hero flow (featured → skills → AI) --- */
+/* --- Home: below-hero flow (featured ‚Üí skills ‚Üí AI) --- */
 .home-below {
   position: relative;
   z-index: 3;
@@ -784,7 +784,7 @@ body.page-work .case-study-cursor__arrow::before {
   margin-right: auto;
 }
 
-/* Featured projects — archive-style cards that drift off-screen */
+/* Featured projects ‚Äî archive-style cards that drift off-screen */
 .home-featured {
   position: relative;
   padding: clamp(3.75rem, 8vh, 5.5rem) 0 clamp(2.5rem, 6vh, 4rem);
@@ -1213,7 +1213,7 @@ body.page-work .case-study-cursor__arrow::before {
   border: 1px solid rgba(167, 139, 250, 0.45);
 }
 
-/* Alternating home section bands (legacy — kept for safety) */
+/* Alternating home section bands (legacy ‚Äî kept for safety) */
 .home-band--a,
 .home-band--b {
   position: relative;
@@ -1299,7 +1299,7 @@ body.page-work .case-study-cursor__arrow::before {
   opacity: 0.65;
 }
 
-/* Short / narrow viewports: allow sections to grow so content isn’t clipped */
+/* Short / narrow viewports: allow sections to grow so content isn‚Äôt clipped */
 @media (max-width: 720px), (max-height: 760px) {
   .home-snap:not(.home-ai) {
     height: auto;
@@ -1316,12 +1316,12 @@ body.page-work .case-study-cursor__arrow::before {
   }
 }
 
-/* Hero → first section: ease into the lavender band */
+/* Hero ‚Üí first section: ease into the lavender band */
 .home-below {
   position: relative;
 }
 
-/* Experience — vertical full-width timeline */
+/* Experience ‚Äî vertical full-width timeline */
 .home-experience {
   position: relative;
   padding: clamp(3.75rem, 8vh, 5.5rem) 0 clamp(2.5rem, 6vh, 4rem);
@@ -1580,7 +1580,7 @@ body.page-work .case-study-cursor__arrow::before {
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.04);
 }
 
-/* Skills — full-width horizontal groups */
+/* Skills ‚Äî full-width horizontal groups */
 .home-skills {
   position: relative;
   padding: clamp(3.75rem, 8vh, 5.5rem) 0 clamp(2.5rem, 6vh, 4rem);
@@ -2261,7 +2261,7 @@ body.page-work .case-study-cursor__arrow::before {
   }
 }
 
-/* Card: neon frame — magenta / fuchsia → cyan (reference: gradient square border + glow) */
+/* Card: neon frame ‚Äî magenta / fuchsia ‚Üí cyan (reference: gradient square border + glow) */
 button.case-study-slide__hit.case-hit {
   position: relative;
   -webkit-appearance: none;
@@ -2318,7 +2318,7 @@ button.case-study-slide__hit.case-hit {
   }
 }
 
-/* Hover / focus: no trace — solid full frame + photo-style neon bloom around entire edge */
+/* Hover / focus: no trace ‚Äî solid full frame + photo-style neon bloom around entire edge */
 button.case-study-slide__hit.case-hit:hover .case-study-frame-trace__path,
 button.case-study-slide__hit.case-hit:focus-visible .case-study-frame-trace__path {
   animation: none !important;
@@ -2348,7 +2348,7 @@ button.case-study-slide__hit.case-hit:focus-visible .case-study-frame-trace__pat
     background 0.4s ease;
 }
 
-/* Blank preview plane — soft tint so the neon frame reads like the reference */
+/* Blank preview plane ‚Äî soft tint so the neon frame reads like the reference */
 .case-study-card__media {
   border-radius: 0.75rem;
   overflow: hidden;
@@ -2479,7 +2479,7 @@ button.case-study-slide__hit.case-hit:focus-visible .case-study-card__inner {
   background: var(--bg-page);
 }
 
-/* --- Work page — About-aligned chrome & color; keeps orb platform, trace edges, cursor --- */
+/* --- Work page ‚Äî About-aligned chrome & color; keeps orb platform, trace edges, cursor --- */
 html.page-work {
   min-height: 100%;
 }
@@ -2680,7 +2680,7 @@ body.page-work .top-chrome {
   }
 }
 
-/* Soft rim so the “platform” reads as a curved surface */
+/* Soft rim so the ‚Äúplatform‚Äù reads as a curved surface */
 .work-platform__rim {
   position: absolute;
   inset: 0;
@@ -3009,7 +3009,7 @@ body.page-work .top-chrome {
   }
 }
 
-/* --- Home: snap dock — jump / focus each case study viewport --- */
+/* --- Home: snap dock ‚Äî jump / focus each case study viewport --- */
 .case-snap-dock {
   position: fixed;
   right: max(0.75rem, env(safe-area-inset-right, 0px));
@@ -3247,7 +3247,7 @@ body.page-about {
   }
 }
 
-/* About photo — horizontal portrait rotated counterclockwise */
+/* About photo ‚Äî horizontal portrait rotated counterclockwise */
 .about-photo-frame {
   position: relative;
   margin: 0;
@@ -3288,9 +3288,9 @@ body.page-about {
   }
 
   .about-photo-slot {
-    width: auto;
-    max-width: 100%;
-    height: clamp(20rem, 36vw, 24rem);
+    width: 100%;
+    height: auto;
+    max-height: 42rem;
     aspect-ratio: 537 / 717;
     min-height: 0;
   }
@@ -3438,7 +3438,7 @@ body.page-about {
   background: #fdfdff;
 }
 
-/* Skills spotlight — light band, same language as rest of site */
+/* Skills spotlight ‚Äî light band, same language as rest of site */
 .about-spotlight {
   position: relative;
   width: 100vw;
@@ -4573,15 +4573,15 @@ body.page-about {
 
 @media (prefers-reduced-motion: reduce) and (min-width: 880px) {
   .about-photo-slot {
-    width: auto;
-    max-width: 100%;
-    height: clamp(20rem, 36vw, 24rem);
+    width: 100%;
+    height: auto;
+    max-height: 42rem;
     aspect-ratio: 537 / 717;
     min-height: 0;
   }
 }
 
-/* --- Contact page — profile card --- */
+/* --- Contact page ‚Äî profile card --- */
 body.page-contact {
   background: #ffffff;
   color: var(--text, #1f2937);
