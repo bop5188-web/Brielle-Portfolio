@@ -4087,6 +4087,19 @@ body.page-about {
   max-width: 44rem;
 }
 
+.blog-post__figure {
+  margin: 1.35rem 0 1.5rem;
+}
+
+.blog-post__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(124, 58, 237, 0.12);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+}
+
 .blog-post__body h3 {
   margin: 2rem 0 0.75rem;
   font-size: 1.15rem;
